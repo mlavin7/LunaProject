@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Container } from '../../../style/theme';
 import { NavbarWrapper, NavbarLeft, NavbarRight, BtnsWrapper } from './style';
-import logo from '../../assets/svgs/logo.svg';
+import logo from '../../../assets/svgs/logo.svg';
 
-function Navbar() {
+const Navbar = () => {
+	// const [active, setActive] = useState(false);
+
 	return (
-		<Fragment>
+		<Container>
 			<NavbarWrapper>
 				<NavbarLeft>
 					<Link to='/'>
@@ -13,10 +16,20 @@ function Navbar() {
 					</Link>
 				</NavbarLeft>
 				<NavbarRight>
-					<Link className='homeLink active' to='/'>
+					<Link
+						// onClick={() => setActive('home')}
+						className='homeLink active'
+						to='/'
+					>
 						Home
 					</Link>
-					<Link className='searchLink' to='#'>
+					<Link
+						// onClick={() => {
+						// 	setActive('search');
+						// }}
+						className='searchLink' //change it to jsx dynamic
+						to='/search'
+					>
 						Search
 					</Link>
 					<Link className='profileLink' to='#'>
@@ -32,8 +45,8 @@ function Navbar() {
 					</BtnsWrapper>
 				</NavbarRight>
 			</NavbarWrapper>
-		</Fragment>
+		</Container>
 	);
-}
+};
 
 export default Navbar;
