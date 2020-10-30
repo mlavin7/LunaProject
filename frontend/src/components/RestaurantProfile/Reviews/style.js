@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ReviewRestaurantProfile = styled.section`
+	/* height: 100%; */
 	margin: 4% 0;
 	width: 100%;
 	text-align: center;
@@ -21,13 +22,12 @@ export const ReviewRestaurantProfile = styled.section`
 
 		.avatar {
 			width: 20%;
-			height: 2 0%;
+			height: 20%;
 		}
 
 		p:nth-child(1) {
 			font-size: ${props => props.theme.fontMedium};
 		}
-
 		.ratings {
 			display: flex;
 			align-items: center;
@@ -38,7 +38,6 @@ export const ReviewRestaurantProfile = styled.section`
 				color: ${props => props.theme.yellowMain};
 			}
 		}
-		
 		.review-timestamp {
 			padding: 0.8rem;
 			width: 30%;
