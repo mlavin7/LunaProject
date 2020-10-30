@@ -11,7 +11,7 @@ import specificReviewAction from '../../store/Actions/specificReviewAction';
 
 import Form from '../../style/Form';
 import Btn from '../../style/Button';
-import avatar from '../../assets/images/avatar.png';
+import avatar from '../../assets/images/avatar.jpg';
 
 const RestaurantProfilePage = ({ restaurant }) => {
 	const dispatch = useDispatch();
